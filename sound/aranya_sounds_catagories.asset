@@ -1,0 +1,13 @@
+#################
+# Events
+#################
+category = {
+	name = "Effects"
+	soundeffects = {
+		event_aranya_sfx_hive_mind
+		pc_aranya_hellish_world
+		pc_aranya_the_grand_gaia_world
+		event_aranya_whispering
+		aranya_event_planet_hellraised
+	}
+}

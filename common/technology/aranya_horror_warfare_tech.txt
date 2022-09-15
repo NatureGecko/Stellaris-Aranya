@@ -1,0 +1,42 @@
+# ##################
+# Weaponry Nightmare Technology
+# ##################
+
+tech_aranya_hellraiser = {
+	cost = 150000
+	area = society
+	tier = 5
+	category = { military_theory }
+	weight = 100
+	is_dangerous = yes
+
+	potential = {
+		has_ascension_perk = ap_aranya_galatic_depression
+	}
+
+	modifier = {
+		description = tech_aranya_hellraiser_effect
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_discovery_adopt
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 3
+			has_civic = civic_fanatic_purifiers
+		}
+	}
+}

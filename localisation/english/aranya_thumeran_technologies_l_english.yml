@@ -1,0 +1,64 @@
+﻿l_english:
+ ####################################
+ # Basic Technology
+ ####################################
+
+ tech_aranya_thumeran_computing: "Mastering Thumeran Computing"
+ tech_aranya_thumeran_computing_desc: "A quantum circuit computer created by an ancient Thumeran empire is one of the most fascinating computer technologies in the galaxy. This computer is 4 times more effective than our quantum Computers. They greatly increase our research branches and technology."
+
+ tech_aranya_thumeran_living_and_thinking: "Thumeran Living And Thinking"
+ tech_aranya_thumeran_living_and_thinking_desc: "The lessons of how Thumeran remained in peace for a hundred generations while the other empires were destroying themself to their end. This may be useful for us to develop the way of thinking of our citizens. \n\n §P\"Love and peace seem to be the reason\" "
+
+ tech_aranya_thumeran_engineering: "Thumeran Engineering"
+ tech_aranya_thumeran_engineering_desc: "We will be reaching into the depth of Thumeran engineering, and apply their knowledge to our technology. We will be able to develop a gigantic build in space faster, yield more products from mining stations, and apply more effective and convenient gears to our workers for more output and their safety. Cost is more, but safety comes first."
+
+ tech_aranya_thumeran_application: "Thumeran Application" 
+ tech_aranya_thumeran_application_desc: "After we have reached the basic of Thumeran technology, now we will have to review and apply them in our country. THis application will increase the efficiency of people all around the empire.§GThis will unlock more technology in the future.§!" 
+
+ ####################################
+ # The Grand Gaia Technology
+ ####################################
+ tech_aranya_the_grand_gaia_concept: "The Grand Gaia Concept"
+ tech_aranya_the_grand_gaia_concept_desc: "An idea of how to invest for the §Gperfect world§! where people live, chill, work and have a better future in that world. §GThe Grand Gaia§! is a special world terraformed from a normal gaia world, providing people with a variety of lifestyles, a perfect place to stay, and an effective workplace. Our empire is going to be the owner of the best world ever in this galaxy. Except there will be a ton of planets of this kind.\n\nThere are several types of the grand gaia, and each type depends on your empire origin, what your empire is, and what you will be."
+
+ tech_aranya_the_grand_gaia_infrastructure_investment: "The Grand Gaia Infrastructure Investment"
+ tech_aranya_the_grand_gaia_infrastructure_investment_desc: "A study insists that The Grand Gaia needs a special infrastructure that suits all forms of intelligent alien life in the galaxy. Some of those can be applied to our normal world across the empire too. We will gather an idea of the infrastructure that will be built here."
+
+ tech_aranya_the_grand_gaia_application: "The Grand Gaia Application"
+ tech_aranya_the_grand_gaia_application_desc: "We need to understand why The Grand Gaia is so important to us, why we need it, and how can we utilize it. Our scientists are designing the districts that suit to us when building The Grand Gaia."
+ tech_aranya_the_grand_gaia_application_title: "§HUnlocks features:§! Terraforming the Grand Gaia"
+ tech_aranya_the_grand_gaia_application_effect: "You will be given one type of the grand gaia world that suits your empires."
+
+ ####################################
+ # The Grand Gaia Terraformation Technology for each type of empire 
+ ####################################
+
+ tech_aranya_the_grand_gaia_terraform_normal: "The Grand Gaia Terraformation"
+ tech_aranya_the_grand_gaia_terraform_normal_desc: "§GCongratulations!§! After your scientist finishes this research, you will be able to terraform a gaia world to the grand gaia, which will §RINSANELY SWALLOW YOUR CREDIT§! for a massive benefit that your empire and your citizens living on that planet will get. It is worth the price anyway.\n\nAllow you to terraform the gaia world into §GThe Grand Gaia World§!. This greatly enhances your quality of life such as trading, production and food production."
+
+ TECH_ARANYA_UNLOCK_THE_GRAND_GAIA_TITLE: "§HUnlocks Terraforming option:§! The Grand Gaia"
+ TECH_ARANYA_UNLOCK_THE_GRAND_GAIA_DESC: "Turn an existing gaia world into a better gaia world with a lof of life ebhancements."
+
+
+ tech_aranya_the_grand_gaia_terraform_fanatic: "The Horror Gaia Teraformation"
+ tech_aranya_the_grand_gaia_terraform_fanatic_desc: "§RFInally!§! We are about to complete the ideal of planet to f**k off people with a s**t ton of alloy production! With the infrastructure upscaled during the terraformation, building a ton of foundry for a mountain of alloy is now just your finger tip! \n\n Also, an §ROMEGA F*CK TON of the fortress§! should guarantee your planet defending too. No one dare invading this planet, may be..?\n\n Allow you to terraform the gaia world into §RThe Horror Gaia World§!, with a set of new district and bonus for your alloy production."
+
+ TECH_ARANYA_UNLOCK_THE_GRAND_GAIA_FANATIC_TITLE: "§HUnlocks Terraforming option:§! The Horror Gaia"
+ TECH_ARANYA_UNLOCK_THE_GRAND_GAIA_FANATIC_DESC: "Turn an existing gaia world into a better gaia world with load of foundry facilities."
+
+
+ tech_aranya_the_grand_gaia_terraform_hive: "The Hive Gaia Teraformation"
+ tech_aranya_the_grand_gaia_terraform_hive_desc: "§GGood news!§! We are about to integrate the Grand Gaia technology with our idea of making a planet into an ideal place for our drone to work.\n\nAllow you to terraform the gaia world into §GThe Hive Gaia world§!, which gives you a new set of benefits on protecting your planet and alloy production."
+
+ TECH_ARANYA_UNLOCK_THE_GRAND_GAIA_HIVE_TITLE: "§HUnlocks Terraforming option:§! The Hive Gaia"
+ TECH_ARANYA_UNLOCK_THE_GRAND_GAIA_HIVE_DESC: "Turn any of your world into a better gaia world with load of better districts."
+
+
+ tech_aranya_the_grand_gaia_terraform_machine: "The Machine Gaia Teraformation"
+ tech_aranya_the_grand_gaia_terraform_machine_desc: "§GGreen light!§! The investment of this technology will provide us a long lot of production and defense benefit. Those infrastructure give us a new set of district to empower our empire.\n\n §GAllow you to terraform any habitable world into §EThe Machine Gaia World§!, with a set of new district and benefit for your populaion."
+
+ TECH_ARANYA_UNLOCK_THE_GRAND_GAIA_MACHINE_TITLE: "§HUnlocks Terraforming option:§! The Machine Gaia"
+ TECH_ARANYA_UNLOCK_THE_GRAND_GAIA_MACHINE_DESC: "Turn any of your world into the machine gaia world with load of better districts."
+
+
+

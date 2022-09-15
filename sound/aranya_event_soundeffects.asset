@@ -1,0 +1,63 @@
+soundeffect =
+	{
+	    name = event_aranya_whispering
+		volume = 0.7
+	    max_audible = 1
+		max_audible_behaviour = fail
+		fade_out = 0.3
+	    sounds = {
+			sound = sfx_archeology_event_whispering_01
+		}
+	}
+
+soundeffect = {
+		name = event_aranya_sfx_hive_mind
+		volume = 0.35
+		loop = no
+		sounds = {
+			sound = event_aranya_sfx_hive_mind
+		} 
+		playbackrate_random_offset = { -10.0 10.0 }
+		fade_out = 0.1
+		max_audible = 1
+		max_audible_behaviour = fail	
+	}
+	
+soundeffect = {
+		name = pc_aranya_the_grand_gaia_world
+		volume = 0.35
+		loop = no
+		sounds = {
+			sound = pc_aranya_the_grand_gaia_world
+		} 
+		playbackrate_random_offset = { -10.0 10.0 }
+		fade_out = 0.1
+		max_audible = 1
+		max_audible_behaviour = fail	
+	}
+
+soundeffect = {
+		name = pc_aranya_hellish_world
+		volume = 0.35
+		loop = no
+		sounds = {
+			sound = pc_aranya_hellish_world
+		} 
+		playbackrate_random_offset = { -10.0 10.0 }
+		fade_out = 0.1
+		max_audible = 1
+		max_audible_behaviour = fail	
+	}
+
+soundeffect = {
+		name = aranya_event_planet_hellraised
+		volume = 0.5
+		loop = no
+		sounds = {
+			sound = pc_aranya_hellish_world
+		} 
+		playbackrate_random_offset = { -10.0 10.0 }
+		fade_out = 0.1
+		max_audible = 1
+		max_audible_behaviour = fail	
+	}

@@ -1,0 +1,49 @@
+﻿l_english:
+ ####################################
+ # Aranya Events
+ ####################################
+ 
+ Aranya_e1_choice_finally_fanatic: "Excellent! Soon they will taste the pain and tortuness."
+ Aranya_e1_choice_finally_non_fanatic: "Finally, we guess this is the only way..."
+ Aranya_e1_choice_finally_machine: "Civilization eradication protocol initiated."
+ # Ascension Perks Galactic Depression
+ aranya_ascension_perk_galactic_depression_event_title: "Galactic Depression"
+ aranya_ascension_perk_galactic_depression_event_desc: "So, this is you. $COUNTRY$ decided to ascend to the top of the food chain, waiting for an opportunity to trample the trouble that traumatized you in the past. Whoever stands in our way, they rest in eternal peace. Whoever we see in our path, we will send them a peace... §Rpeaceful death§!. "
+
+ Aranya_e2_choice_finally_fanatic: "Fantastic! Can't wait to see more!"
+ Aranya_e2_choice_finally_non_fanatic: "Interesting..."
+ Aranya_e2_choice_finally_machine: "Civilization eradication protocol advanced."
+ aranya_ascension_perk_galactic_depression_event_2_title: "Into the hellish world"
+ aranya_ascension_perk_galactic_depression_event_2_desc: "The Hellish world was a controversial topic in the past but not many people care about it right now. The world is filled with endless ongoing unstoppable pain that has no way out except the sound of endless screaming from some form of life on the ground.\n\nThere are a lores saying that the hellish world was accidently created very long ago by the fallen empire who wanted to destroy every existence in this galaxy, but it appeared to be themself devastated instead. If we need to be on the top of the food chain, this may be an option. Just don't make a mistake like what they did.\n\nTo put it simply, the hellish world is hell, where people staying there are having an eternal turtorness just like in hell. No one can leave, no one can give them a hand. No one can do anything about it. But it seems like we can create it.\n\nHowever, we don't expect to help everyone there because it is theoretically impossible. We do care about the sample extraction from the surface, and we need to think on how to get a sample from that one-way ticket world. \n\nThe only solution is to drop an unmanned sample collector into the surface, which requires a 400 kilometer thin carbon-fiber cable and a very powerful ship to pull it up. We will only do the research on that station once the sample is picked up. This is going to cost a lot, but should be worth the price."
+
+ Aranya_e3_choice_finally_fanatic: "Use them for the weapon! Nothing stands our way!"
+ Aranya_e3_choice_finally_non_fanatic: "We must temporary suppress the project, or continue with caution."
+ Aranya_e3_choice_finally_machine: "Noted."
+ aranya_ascension_perk_galactic_depression_event_3_title: "Hellraiser"
+ aranya_ascension_perk_galactic_depression_event_3_desc: "We found out that our ascendance is way too powerful and destructive on the others, and on our own. Our scientist discovered that a sample gathered from the hellish world is a living entity filled with a load of unknown energy. It violently reacts to the scientist, but it is harmless when kept in the vacuum chamber.\n\nRecently, we did an experiment with that object on the space station at a safe distance from our homeworld. It appears that the object led out a very dark smoke when touching the air, before instantly turning every square meter in that station into HELL.\n\nWe received the transmission from the station during that time. There were the howls of people screaming with indescribable pain and unimaginable torture. The video we got from the station shows the crews inside the station were distorted into some form of life with least of their original limbs and face intact. Their bodies were twisted, their skin were torn apart, their borns taken out and lying outside their body. Moreover, they were alive in that condition and were begging for help for the whole day. \n\nNo one returns from that station. Our scientist leader who was responsible for this project was trapped inside and did not get out in time. We didn't expect that to happen, and still have no idea how. But this is obviously the most destructive and horrifying thing we have ever seen so far. I suggest we stop reaching our goal using this kind of thing, or continue with caution."
+
+ Aranya_e4_choice: "Rest in peace..."
+ aranya_ascension_perk_galactic_depression_event_4_title: "We go where we plase "
+ aranya_ascension_perk_galactic_depression_event_4_desc: "The whole station was covered in flesh. All the crews were still alive, but their condition was the worst. They were still howling for help, but their bodies were intact to the ship and it was impossible to recover them.\n\nIt appeared that the whole station was a living entity. It was reacting to our shuttle ship that was trying to drag the station and throw it to the sun. It was trying to escape but luckily, there was no engine on that station.\n\nWe managed to collect the sample from the flesh on that station and kept it safely, and managed to destroy the station in the sun, ending the misery of the innocent crews."
+
+ ####################################
+ # Aranya Events Chain
+ ####################################
+ aranya_galactic_depression: "Galactic Depression"
+
+ ####################################
+ # Planetary Bombardment Event
+ ####################################
+ aranya_bombardment_event.99001.title: "Hellraised"
+ aranya_bombardment_event.99001.desc: "We have received a transmission from the planet §R[From.GetName]§!, which has been §Rhellraised§! by §Y[Root.GetName]§!. 99% of the population didn't make escape in time. They are trapped in an eternal pain and misery with no way out. Everybody on the planet seems to still be alive, but we can only hear them scream in howls forever."
+ aranya_bombardment_event.99001.1: "Another weak nuked."
+ aranya_bombardment_event.99001.2: "Raise an alarm!"
+ aranya_bombardment_event.99001.tooltip: "§Y[From.GetName] has been §Rhellraised§!."
+
+ aranya_bombardment_event.99002.title: "Hellraised"
+ aranya_bombardment_event.99002.desc: "We have shown no mercy to all the prey on the planet §R[From.GetName]§!, and turned it into the §MHellish world§!. All souls are trapped with eternal misery with the only one way out, crack the planet."
+ aranya_bombardment_event.99002.tooltip: "Our target, §Y[From.GetName] has been §Rhellraised§!."
+
+ aranya_bombardment_event.99003.title: "Our plabet has been Hellraised!"
+ aranya_bombardment_event.99003.desc: ""
+ aranya_bombardment_event.99003.tooltip: "Our colony, §Y[From.GetName] turned into the §Mhellish world§!."

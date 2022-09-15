@@ -1,0 +1,41 @@
+#################
+# ASCENSION PERKS
+#################
+
+ap_aranya_galatic_depression = {
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_3"
+			num_ascension_perks > 2
+		}
+	}
+
+	on_enabled = {
+		custom_tooltip = "ap_aranya_galatic_depression_effect"
+		hidden_effect = { country_event = { id = AranyaAscensionGalacticDepressionEvents.1 } }
+	}
+
+	potential = {
+		OR = {
+			has_ethic = ethic_fanatic_xenophobe
+			has_ethic = ethic_xenophobe
+			has_authority = auth_machine_intelligence
+		}
+		NOT = {
+			has_ascension_perk = ap_aranya_galatic_depression;
+		}
+	}
+
+	ai_weight = {
+		factor = 1
+		modifier = {
+			factor = 20
+			has_civic = civic_fanatic_purifiers
+		}
+		modifier = {
+			factor = 2.5
+			is_xenophobe = yes
+		}
+	}
+
+}

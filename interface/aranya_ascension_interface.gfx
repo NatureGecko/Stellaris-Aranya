@@ -1,0 +1,8 @@
+spriteTypes = {
+	# Ascension Perks
+	spriteType = {
+		name = "GFX_ap_aranya_galatic_depression"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_aranya_galatic_depression.dds"
+		alwaystransparent = yes
+	}
+}

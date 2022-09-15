@@ -1,0 +1,11 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_mod_aranya_hellraising_victim"
+		texturefile = "gfx/interface/icons/modifiers/mod_aranya_hellraising_victim.dds"
+	}
+	spriteType = {
+		name = "GFX_mod_aranya_hellraising_memorial"
+		texturefile = "gfx/interface/icons/modifiers/mod_aranya_hellraising_memorial.dds"
+	}
+}
+

@@ -1,0 +1,71 @@
+namespace = AranyaAscensionGalacticDepressionEvents
+######################################
+#									 #
+########### Space Engineers ###########
+#									 #
+######################################
+
+country_event = {
+	id = AranyaAscensionGalacticDepressionEvents.1
+	title = "aranya_ascension_perk_galactic_depression_event_title"
+	desc = "aranya_ascension_perk_galactic_depression_event_desc"
+	show_sound = event_aranya_sfx_hive_mind
+	picture = GFX_aranya_galactic_depression
+	location = capital_scope
+	is_triggered_only = yes
+	option = { 
+		name = Aranya_e1_choice_finally_non_fanatic 
+		enable_special_project = { name = "GALACTIC_DREPRESSION_STEP_1" }
+		trigger  = {
+			NOR = {
+				has_civic = civic_fanatic_purifiers
+				has_authority = auth_machine_intelligence
+			}
+		}
+	}
+	option = { 
+		name = Aranya_e1_choice_finally_fanatic 
+		enable_special_project = { name = "GALACTIC_DREPRESSION_STEP_1" }
+		trigger  = {
+			has_civic = civic_fanatic_purifiers
+		}
+	}
+	option = { 
+		name = Aranya_e1_choice_finally_machine 
+		enable_special_project = { name = "GALACTIC_DREPRESSION_STEP_1" }
+		trigger  = {
+			has_authority = auth_machine_intelligence
+		}
+	}
+}
+
+country_event = {
+	id = AranyaAscensionGalacticDepressionEvents.2
+	title = "aranya_ascension_perk_galactic_depression_event_2_title"
+	desc = "aranya_ascension_perk_galactic_depression_event_2_desc"
+	show_sound = event_aranya_sfx_hive_mind
+	picture = GFX_aranya_galactic_depression
+	location = capital_scope
+	is_triggered_only = yes
+	option = { 
+		name = Aranya_e2_choice_finally_non_fanatic 
+		trigger  = {
+			NOR = {
+				has_civic = civic_fanatic_purifiers
+				has_authority = auth_machine_intelligence
+			}
+		}
+	}
+	option = { 
+		name = Aranya_e2_choice_finally_fanatic 
+		trigger  = {
+			has_civic = civic_fanatic_purifiers
+		}
+	}
+	option = { 
+		name = Aranya_e2_choice_finally_machine 
+		trigger  = {
+			has_authority = auth_machine_intelligence
+		}
+	}
+}

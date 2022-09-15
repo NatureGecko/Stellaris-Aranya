@@ -1,0 +1,16 @@
+sound = {
+	name = "event_aranya_sfx_hive_mind"
+	file = "ancient_relics/sfx_world_hivemind_show_planet_03.wav"
+	volume = 0.8
+}
+sound = {
+	name = "pc_aranya_the_grand_gaia_world"
+	file = "ambient/pc_aranya_the_grand_gaia_world.wav"
+	volume = 0.7
+}
+
+sound = {
+	name = "pc_aranya_hellish_world"
+	file = "ambient/pc_aranya_hellish_world.wav"
+	volume = 0.7
+}

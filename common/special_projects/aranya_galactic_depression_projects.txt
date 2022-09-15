@@ -1,0 +1,32 @@
+special_project = {
+	key = "GALACTIC_DREPRESSION_STEP_1"
+	cost = 140000
+	tech_department = society_technology
+	picture = GFX_aranya_galactic_depression
+	event_scope = country_event
+	icon = "gfx/interface/icons/situation_log/aranya_galactic_depression.dds"
+	on_success = { country_event = { id = AranyaAscensionGalacticDepressionEvents.2 } }
+	on_fail = {}
+}
+
+special_project = {
+	key = "GALACTIC_DREPRESSION_STEP_NORMAL_2"
+	cost = 140000
+	tech_department = society_technology
+	picture = GFX_aranya_galactic_depression
+	event_scope = country_event
+	icon = "gfx/interface/icons/situation_log/aranya_galactic_depression.dds"
+	on_success = { country_event = { id = AranyaAscensionGalacticDepressionEvents.2 } }
+	on_fail = {}
+}
+
+special_project = {
+	key = "GALACTIC_DREPRESSION_STEP_MACHINE_2"
+	cost = 140000
+	tech_department = society_technology
+	picture = GFX_aranya_galactic_depression
+	event_scope = country_event
+	icon = "gfx/interface/icons/situation_log/aranya_galactic_depression.dds"
+	on_success = { country_event = { id = AranyaAscensionGalacticDepressionEvents.2 } }
+	on_fail = {}
+}

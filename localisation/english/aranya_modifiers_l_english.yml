@@ -1,0 +1,16 @@
+﻿l_english:
+ ####################################
+ # Aranya country modifier
+ ####################################
+ aranya_hellraising_victim: "Hellraiser Victim"
+ aranya_hellraising_victim_desc: "The national trauma of the hellraiser attack suffers to the happiness of our people and causes them in fear. They are more likely to flee from this planet to escape hell."
+ 
+ aranya_hellraising_memorial: "Hellraising Memorial"
+ aranya_hellraising_memorial_desc: "Many citizens are still suffering from losing their lover or their acquaintance in the hellish world. They still miss their love there."
+
+ ####################################
+ # Aranya opinion modifier
+ ####################################
+ opinion_aranya_hellraising_planet: "Hellraised world"
+ opinion_aranya_hellraising_our_planet: "Hellraised our world"
+ 

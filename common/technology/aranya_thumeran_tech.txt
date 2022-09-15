@@ -1,0 +1,426 @@
+# ## physics technologies
+
+# ##################
+# Basic Thumeran Technology
+# ##################
+
+tech_aranya_thumeran_computing = {
+	cost = 75000
+	area = physics
+	tier = 4
+	category = { computing }
+	weight = 20
+	prerequisites = { "tech_physics_3" "tech_starbase_4" }
+	is_rare = yes
+
+	ai_weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_materialist
+		}
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_materialist
+		}
+	}
+
+	potential = {
+		has_ascension_perk = ap_technological_ascendancy
+	}
+
+	modifier = {
+		country_physics_research_produces_mult = 0.3
+		country_society_research_produces_mult = 0.3
+		country_engineering_research_produces_mult = 0.3
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_materialist
+		}
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_materialist
+		}
+	}
+
+}
+
+tech_aranya_thumeran_living_and_thinking = {
+	cost = 80000
+	area = society
+	tier = 5
+	weight = 100
+	category = { statecraft }
+	prerequisites = { "tech_aranya_thumeran_computing" }
+	is_rare = yes
+
+	modifier = {
+		planet_pops_consumer_goods_upkeep_mult = -0.12
+		planet_stability_add = 5
+	}
+}
+
+tech_aranya_thumeran_engineering = {
+	cost = 90000
+	area = engineering
+	tier = 5
+	weight = 100
+	category = { voidcraft }
+	prerequisites = { "tech_aranya_thumeran_living_and_thinking" }
+	is_rare = yes
+
+	modifier = {
+		country_megastructure_build_cap_add = 1
+		starbase_upgrade_time_mult = -0.20
+	}
+}
+
+tech_aranya_thumeran_application = {
+	cost = 100000
+	area = engineering
+	tier = 5
+	weight = 100
+	category = { materials }
+	prerequisites = { "tech_aranya_thumeran_engineering" }
+	is_rare = yes
+
+	modifier = {
+		megastructure_build_speed_mult = 0.5
+		planet_jobs_produces_mult = 0.3
+		stations_produces_mult = 0.3
+	}
+
+}
+
+# ##################
+# The Grand Gaia
+# ##################
+
+
+tech_aranya_the_grand_gaia_concept = {
+	cost = 60000
+	area = physics
+	tier = 5
+	category = { particles }
+	weight = @tier4weight1
+
+	modifier = {
+		terraform_speed_mult = 0.05
+	}
+
+	potential = {
+		has_technology = tech_aranya_thumeran_application
+		has_technology = tech_climate_restoration
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_expansion_adopt
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+		}
+	}
+}
+
+tech_aranya_the_grand_gaia_infrastructure_investment = {
+	cost = 45000
+	area = society
+	tier = 5
+	category = { new_worlds }
+	prerequisites = { "tech_aranya_the_grand_gaia_concept" }
+	weight = 100
+
+	modifier = {
+		planet_jobs_produces_mult = 0.05
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_expansion_adopt
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+	}
+}
+
+tech_aranya_the_grand_gaia_application = {
+	cost = 50000
+	area = society
+	tier = 5
+	category = { new_worlds }
+	prerequisites = { "tech_aranya_the_grand_gaia_infrastructure_investment" }
+	weight = 100
+
+	prereqfor_desc = {
+		custom = {
+			title = "tech_aranya_the_grand_gaia_application_title"
+			desc = "tech_aranya_the_grand_gaia_application_effect"
+		}
+	}
+
+	potential = {
+		has_ascension_perk = ap_world_shaper
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_expansion_adopt
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+	}
+}
+
+# ##################
+# The Grand Gaia World for normal empire
+# ##################
+tech_aranya_the_grand_gaia_terraform_normal = {
+	cost = 50000
+	area = society
+	tier = 5
+	category = { new_worlds }
+	prerequisites = { "tech_aranya_the_grand_gaia_application" }
+	weight = 100
+	is_rare = yes
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_ARANYA_UNLOCK_THE_GRAND_GAIA_TITLE"
+			desc = "TECH_ARANYA_UNLOCK_THE_GRAND_GAIA_DESC"
+		}
+	}
+
+	potential = {
+		NOT = {
+			has_civic = civic_fanatic_purifiers
+			has_authority = auth_machine_intelligence
+			has_authority = auth_hive_mind 
+		}
+		has_ascension_perk = ap_world_shaper
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_expansion_adopt
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.75
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+	}
+}
+
+# ##################
+# The Grand Gaia World for fanatic purifier empire
+# ##################
+tech_aranya_the_grand_gaia_terraform_fanatic = {
+	cost = 50000
+	area = society
+	tier = 5
+	category = { new_worlds }
+	prerequisites = { "tech_aranya_the_grand_gaia_application" }
+	weight = 100
+	is_rare = yes
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_ARANYA_UNLOCK_THE_GRAND_GAIA_FANATIC_TITLE"
+			desc = "TECH_ARANYA_UNLOCK_THE_GRAND_GAIA_FANATIC_DESC"
+		}
+	}
+
+	potential = {
+		has_civic = civic_fanatic_purifiers
+		has_ascension_perk = ap_world_shaper		
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_expansion_adopt
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.75
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+	}
+}
+
+# ##################
+# The Grand Gaia World for hive mind
+# ##################
+tech_aranya_the_grand_gaia_terraform_hive = {
+	cost = 50000
+	area = society
+	tier = 5
+	category = { new_worlds }
+	prerequisites = { "tech_aranya_the_grand_gaia_application" }
+	weight = 100
+	is_rare = yes
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_ARANYA_UNLOCK_THE_GRAND_GAIA_HIVE_TITLE"
+			desc = "TECH_ARANYA_UNLOCK_THE_GRAND_GAIA_HIVE_DESC"
+		}
+	}
+
+	potential = {
+		has_authority = auth_hive_mind
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_expansion_adopt
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.75
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+	}
+}
+
+# ##################
+# The Grand Gaia World for machine
+# ##################
+tech_aranya_the_grand_gaia_terraform_machine = {
+	cost = 50000
+	area = society
+	tier = 5
+	category = { new_worlds }
+	prerequisites = { "tech_aranya_the_grand_gaia_application" }
+	weight = 100
+	is_rare = yes
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_ARANYA_UNLOCK_THE_GRAND_GAIA_MACHINE_TITLE"
+			desc = "TECH_ARANYA_UNLOCK_THE_GRAND_GAIA_MACHINE_DESC"
+		}
+	}
+
+	potential = {
+		has_authority = auth_machine_intelligence
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_expansion_adopt
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

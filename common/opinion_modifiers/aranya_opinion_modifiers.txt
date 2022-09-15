@@ -1,0 +1,11 @@
+opinion_aranya_hellraising_planet = {
+	opinion = {
+		base = -700
+	}
+}
+
+opinion_aranya_hellraising_our_planet = {
+	opinion = {
+		base = -1250
+	}
+}
