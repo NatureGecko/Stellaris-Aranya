@@ -16,15 +16,13 @@ planet_event = {
 	#Hellraise this planet if...
 	trigger = {
 		planet_devastation >= 100
-		has_orbital_bombardment_stance = aranya_bombardment_hellraising
+		has_orbital_bombardment_stance = hellraising
 		OR = {
 			habitable_planet = yes
 			is_planet_class = pc_ringworld_habitable
 			is_planet_class = pc_habitat
 		}
-		NOT = {
-			has_planet_flag = bombardment_cooldown
-		}
+
 	}
 
 	#What happends after the devastation reached 100%
@@ -40,9 +38,7 @@ planet_event = {
 		reroll_deposits = yes
 		clear_planet_modifiers = yes
 
-		add_opinion_modifier = {
-			modifier = opinion_aranya_hellraising_our_planet
-		}
+
 
 		#Imform the destruction of the planet to all country.
 		every_country = {
@@ -70,9 +66,7 @@ planet_event = {
 					}
 				}
 			}
-			add_opinion_modifier = {
-				modifier = opinion_aranya_hellraising_planet
-			}
+
 			country_event = { id = aranya_bombardment_event.99001 }
 		}
 		if = {
@@ -103,3 +97,46 @@ planet_event = {
 
 
 
+# 99001 notify all empire
+country_event = {
+	id = aranya_bombardment_event.99001
+	title = "aranya_bombardment_event.99001.title"
+	picture = GFX_aranya_event_planet_hellraised
+	desc = "aranya_bombardment_event.99001.desc"
+	show_sound = aranya_event_planet_hellraised
+	location = from
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = aranya_bombardment_event.99001.1
+		custom_tooltip = aranya_bombardment_event.99001.tooltip
+		trigger  = {
+			has_civic = civic_fanatic_purifiers
+		}
+	}
+	option = {
+		name = aranya_bombardment_event.99001.2
+		custom_tooltip = aranya_bombardment_event.99001.tooltip
+	}
+}
+
+# 99002 Inform the attacker that the planet they are bombarding is hellraised.
+country_event = {
+	id = aranya_bombardment_event.99002
+	title = "aranya_bombardment_event.99002.title"
+	picture = GFX_aranya_event_planet_hellraised
+	desc = "aranya_bombardment_event.99002.desc"
+	show_sound = aranya_event_planet_hellraised
+	is_triggered_only = yes
+	location = from
+	option = {
+		name = aranya_bombardment_event.99001.1
+		custom_tooltip = aranya_bombardment_event.99001.tooltip
+		trigger  = {
+			has_civic = civic_fanatic_purifiers
+		}
+	}
+}
+
+# 99003 Inform the pray that thir planet is hellraised.

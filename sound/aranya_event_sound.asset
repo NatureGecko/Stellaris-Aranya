@@ -14,3 +14,46 @@ sound = {
 	file = "ambient/pc_aranya_hellish_world.wav"
 	volume = 0.7
 }
+
+################## HELLRAISER BOMBARDMENT ##################
+
+sound = 
+{
+	name = "aranya_bombardment_scream_01"
+	file = "weapons/aranya_bombardment_scream_01.wav"
+}
+sound = 
+{
+	name = "aranya_bombardment_scream_02"
+	file = "weapons/aranya_bombardment_scream_02.wav"
+}
+sound = 
+{
+	name = "aranya_bombardment_scream_03"
+	file = "weapons/aranya_bombardment_scream_03.wav"
+}
+sound = 
+{
+	name = "aranya_bombardment_scream_04"
+	file = "weapons/aranya_bombardment_scream_04.wav"
+}
+sound = 
+{
+	name = "aranya_bombardment_scream_05"
+	file = "weapons/aranya_bombardment_scream_05.wav"
+}
+sound = 
+{
+	name = "aranya_bombardment_scream_06"
+	file = "weapons/aranya_bombardment_scream_06.wav"
+}
+sound = 
+{
+	name = "aranya_bombardment_scream_07"
+	file = "weapons/aranya_bombardment_scream_07.wav"
+}
+sound = 
+{
+	name = "aranya_bombardment_scream_08"
+	file = "weapons/aranya_bombardment_scream_08.wav"
+}

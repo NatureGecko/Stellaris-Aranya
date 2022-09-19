@@ -1,0 +1,9 @@
+objectTypes = {
+
+	#Bombardment
+	pdxparticle = {
+		name = "aranya_planetary_bombardment_hellraiser_effect"
+		type = "aranya_planetary_bombardment_hellraiser"
+		scale = 1.0
+	}
+}

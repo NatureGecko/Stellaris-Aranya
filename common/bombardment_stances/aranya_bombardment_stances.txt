@@ -24,30 +24,32 @@
 #		weight = 1
 #
 
-aranya_bombardment_hellraising = {
+hellraising = {
+	default = no
 	trigger= {
 		owner = { has_technology = tech_aranya_hellraiser }
+		owner = { has_ascension_perk = ap_aranya_galatic_depression }
+		NOT = {
+			owner = {
+				has_policy_flag = orbital_bombardment_selective
+			}
+		}
 	}
 
 	stop_when_armies_dead = no
 	abduct_pops = no
 
-	planet_damage = 25
-	army_damage = 0.5
+	planet_damage = 15
+	army_damage = 100.0
 	
 	kill_pop_chance = {
-		base = 1.5
+		base = 0.2
 	}
 
-	min_pops_to_kill_pop = 1
+	min_pops_to_kill_pop = 0
 
 	ai_weight = {
 		weight = 1
-		modifier = {
-			factor = 5
-			owner = { has_ascension_perk = ap_aranya_galatic_depression }
-			
-		}
 		modifier = {
 			factor = 20
 			OR = {

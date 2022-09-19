@@ -11,3 +11,11 @@ category = {
 		aranya_event_planet_hellraised
 	}
 }
+
+category = {
+	name = "Weapon"
+	soundeffects = {
+	   ######## BOMBARDMENT
+	   aranya_hellraiser_bombardment_explosion
+	}
+}

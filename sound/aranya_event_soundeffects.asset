@@ -61,3 +61,26 @@ soundeffect = {
 		max_audible = 1
 		max_audible_behaviour = fail	
 	}
+
+#Hellraiser bombardment
+soundeffect = {
+		name = aranya_hellraiser_bombardment_explosion
+		falloff = "falloff_bombardment"
+		sounds = {
+			sound = aranya_bombardment_scream_01
+			sound = aranya_bombardment_scream_02
+			sound = aranya_bombardment_scream_03
+			sound = aranya_bombardment_scream_04
+			sound = aranya_bombardment_scream_05
+			sound = aranya_bombardment_scream_06
+			sound = aranya_bombardment_scream_07
+			sound = aranya_bombardment_scream_08
+		}
+		is3d = yes
+		max_audible = 16
+		max_audible_behaviour = fail
+		delay_random_offset = { 0.0 0.15 }
+		#playbackrate_random_offset = { -0.2 0.15 }
+		volume_random_offset = { -0.05 0.2 }	
+		#volume = 0.5
+	}

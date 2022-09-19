@@ -22,7 +22,7 @@ ap_aranya_galatic_depression = {
 			has_authority = auth_machine_intelligence
 		}
 		NOT = {
-			has_ascension_perk = ap_aranya_galatic_depression;
+			has_ascension_perk = ap_aranya_galatic_depression
 		}
 	}
 

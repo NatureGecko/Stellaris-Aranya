@@ -5,39 +5,5 @@
 #########################################
 
 
-# 9900X Inform all empires that someone has been hellraised.
-country_event = {
-	id = aranya_bombardment_event.99001
-	title = "aranya_bombardment_event.99001.title"
-	picture = GFX_aranya_event_planet_hellraised
-	desc = "aranya_bombardment_event.99001.desc"
-	show_sound = aranya_event_planet_hellraised
-	location = from
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = aranya_bombardment_event.99001.1
-		custom_tooltip = aranya_bombardment_event.99001.tooltip
-		trigger  = {
-			has_civic = civic_fanatic_purifiers
-		}
-	}
-	option = {
-		name = aranya_bombardment_event.99001.2
-		custom_tooltip = aranya_bombardment_event.99001.tooltip
-	}
-}
-
-# 9900X Inform the attacker that the planet they are bombarding is hellraised.
-country_event = {
-	id = aranya_bombardment_event.99002
-	title = "aranya_bombardment_event.99002.title"
-	picture = GFX_aranya_event_planet_hellraised
-	desc = "aranya_bombardment_event.99002.desc"
-	show_sound = aranya_event_planet_hellraised
-	is_triggered_only = yes
-	location = from
-}
-
-# 9900X Inform the pray that thir planet is hellraised.
+# 900X Inform all empires that someone has been hellraised.
+namespace = aranya_bombardment_event
