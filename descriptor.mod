@@ -8,4 +8,4 @@ tags={
 	"Gameplay"
 }
 name="Aranya"
-supported_version="3.4.5"
+supported_version="3.5.*"

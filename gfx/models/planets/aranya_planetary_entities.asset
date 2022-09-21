@@ -3,7 +3,7 @@
 
 #####    Planetary Bombardment    ######
 entity = {
-	name = "orbital_bombardment_effects"
+	name = "aranya_orbital_bombardment_effects"
 	pdxmesh = "bombardment_frame_mesh"
 	
 	cull_radius = 500.0

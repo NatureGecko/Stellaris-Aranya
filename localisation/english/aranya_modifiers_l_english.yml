@@ -2,15 +2,23 @@
  ####################################
  # Aranya country modifier
  ####################################
- aranya_hellraising_victim: "Hellraiser Victim"
- aranya_hellraising_victim_desc: "The national trauma of the hellraiser attack suffers to the happiness of our people and causes them in fear. They are more likely to flee from this planet to escape hell."
+ aranya_hellraising_victim_1: "Hellraiser Victim - Mass Devastation"
+ aranya_hellraising_victim_1_desc: "The national trauma of the hellraiser attack suffers to the happiness of our people and causes them in fear. They are more likely to flee from this planet to escape hell."
  
+ aranya_hellraising_victim_2: "Hellraiser Victim - Nightmare"
+ aranya_hellraising_victim_2_desc: "Many citizens in this nation were trapped in the hellish world. People are in fear and aware that their country may not be able to protect them."
+
+ aranya_hellraising_victim_3: "Hellraiser Victim - Total Anarchy"
+ aranya_hellraising_victim_3_desc: "Since there are so many people and planets lost in the hellraiser attack, the society of this nation fails in anarchy. "
+
  aranya_hellraising_memorial: "Hellraising Memorial"
  aranya_hellraising_memorial_desc: "Many citizens are still suffering from losing their lover or their acquaintance in the hellish world. They still miss their love there."
 
  ####################################
  # Aranya opinion modifier
  ####################################
- opinion_aranya_hellraising_planet: "Hellraised world"
- opinion_aranya_hellraising_our_planet: "Hellraised our world"
+ opinion_aranya_hellraised_planet: "Hellraised world"
+ opinion_aranya_hellraised_our_planet: "Hellraised our world"
+ opinion_aranya_galactic_depression: "Galactic Depression"
+ opinion_aranya_galactic_depression_warefare: "Having galactic depressing technologies"
  

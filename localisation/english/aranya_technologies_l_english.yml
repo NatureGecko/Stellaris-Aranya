@@ -60,5 +60,16 @@
  TECH_ARANYA_UNLOCK_THE_GRAND_GAIA_MACHINE_TITLE: "§HUnlocks Terraforming option:§! The Machine Gaia"
  TECH_ARANYA_UNLOCK_THE_GRAND_GAIA_MACHINE_DESC: "Turn any of your world into the machine gaia world with load of better districts."
 
+ ####################################
+ # Bombarement technologies
+ ####################################
 
+ bombardment_hellraising: "§MHell Raising§!"
+ bombardment_hellraising_desc: "Imprison all innocent souls on that planet by giving them an endingless nightmare , tearing their innocent soul apart from their body and trapping them in their planet, letting them face eternal pain and misery with no way in or out.\n- §MHELL§! damage to §YArmies§!\n- §MHELL§! damage to §YTiles§!\n- §MHELL§! damage to §YPops§! \nThink twice before use!"
 
+ ####################################
+ # Galactic Depression Tech
+ ####################################
+ tech_aranya_hellraiser: "§WHELLRAISER§!"
+ tech_aranya_hellraiser_desc: "§!Hellraiser in this place is an act of turning someplace into §RHELL§!. We utilize whatever we found in the hellish world to turn any world into the hellish world, imprisoning all innocent souls in the world fulfilled with eternal pain and torture.\n\nResearching this technology will §Rgreatly decrease an opinion§! of the other empire, since everyone knows that turning the world into hell is much worse than cracking the world and killing everyone. Because this will not kill them, this will imprison them."
+ tech_aranya_hellraiser_effect: "§HUnlocks bombardment stance : §!$bombardment_hellraising$"

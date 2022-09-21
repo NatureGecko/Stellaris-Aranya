@@ -1,9 +1,0 @@
-#########################################
-#
-# Planetary bombardnemt event
-#
-#########################################
-
-
-# 900X Inform all empires that someone has been hellraised.
-namespace = aranya_bombardment_event

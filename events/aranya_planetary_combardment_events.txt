@@ -22,53 +22,71 @@ planet_event = {
 			is_planet_class = pc_ringworld_habitable
 			is_planet_class = pc_habitat
 		}
-
+		NOT = {
+			has_planet_flag = bombardment_cooldown
+		}
 	}
 
-	#What happends after the devastation reached 100%
 	immediate = {
-		add_threat = { who = from.owner amount = 20 }
+		#Once reached 100% devastation, the planet has another 60 days to survive.
+		set_timed_planet_flag = {
+			flag = bombardment_cooldown days = 60
+		}
+
+		#Inform the prey
+		owner = {
+			add_static_war_exhaustion = {
+				attacker = from
+				location = root
+				value_for_planet_destruction = 5.0
+			}
+			add_opinion_modifier = {
+				who = from
+				modifier = opinion_aranya_hellraised_our_planet
+			}
+			country_event = {
+				id = aranya_bombardment_event.99003
+			}
+		}
+
+		#Inform the attacker
+		from = {
+			country_event = {
+				id = aranya_bombardment_event.99002
+			}
+		}
+
+		#Inform everyone
+		every_playable_country = {
+			limit = {
+				NOR = {
+					is_same_value = from
+					is_same_value = root.owner
+				}
+				OR = {
+					has_communications = from
+					has_communications = root.owner
+				}
+			}
+			add_opinion_modifier = {
+				who = from
+				modifier = opinion_aranya_hellraised_planet
+			}
+			country_event = {
+				id = aranya_bombardment_event.99001
+			}
+		}
+
+		#Once informed, hellraise the world.
+		#Destroy every pieces of shit on the planet
 		destroy_colony = yes
 		every_owned_pop = {
 			kill_pop = yes
 		}
-
-		#Destroy every pieces of shit on the planet
 		remove_all_buildings = yes
 		reroll_deposits = yes
 		clear_planet_modifiers = yes
-
-
-
-		#Imform the destruction of the planet to all country.
-		every_country = {
-			limit = {
-				NOR = {
-					is_same_value = from.owner
-					is_same_value = root.owner
-				}
-				OR = {
-					has_communications = from.owner
-					has_communications = root.owner
-				}
-				OR = {
-					AND = {
-						has_federation = yes
-						is_in_federation_with = root.owner
-					}
-					AND = {
-						is_country_type = default
-						OR = {
-							is_egalitarian = yes
-							is_xenophile = yes
-							is_pacifist = yes
-						}
-					}
-				}
-			}
-
-			country_event = { id = aranya_bombardment_event.99001 }
-		}
+		
 		if = {
 			limit = {
 				NOR = {
@@ -92,31 +110,63 @@ planet_event = {
 			}
 			reset_planet = yes
 		}
+		else = {
+			reset_planet = yes
+		}
+
+	}
+
+
+}
+
+#########################################
+#
+# Count how many population lost in the hellraising event
+#
+#########################################
+country_event = {
+	id = aranya_bombardment_event.1002
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		set_variable = {
+			which = aranya_hellraising_victim_count
+			value = 0
+		}
+		change_variable = {
+			which = aranya_hellraising_victim_count
+			value = 50
+		}
 	}
 }
 
 
+#########################################
+#
+# Notification Windows
+#
+#########################################
 
 # 99001 notify all empire
 country_event = {
 	id = aranya_bombardment_event.99001
 	title = "aranya_bombardment_event.99001.title"
-	picture = GFX_aranya_event_planet_hellraised
 	desc = "aranya_bombardment_event.99001.desc"
+	picture = GFX_aranya_event_serious_council
 	show_sound = aranya_event_planet_hellraised
 	location = from
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = aranya_bombardment_event.99001.1
+		name = aranya_bombardment_event.99001.c1
 		custom_tooltip = aranya_bombardment_event.99001.tooltip
 		trigger  = {
 			has_civic = civic_fanatic_purifiers
 		}
 	}
 	option = {
-		name = aranya_bombardment_event.99001.2
+		name = aranya_bombardment_event.99001.c2
 		custom_tooltip = aranya_bombardment_event.99001.tooltip
 	}
 }
@@ -125,18 +175,58 @@ country_event = {
 country_event = {
 	id = aranya_bombardment_event.99002
 	title = "aranya_bombardment_event.99002.title"
-	picture = GFX_aranya_event_planet_hellraised
 	desc = "aranya_bombardment_event.99002.desc"
+	picture = GFX_aranya_event_planet_hellraised
 	show_sound = aranya_event_planet_hellraised
 	is_triggered_only = yes
 	location = from
+
 	option = {
-		name = aranya_bombardment_event.99001.1
-		custom_tooltip = aranya_bombardment_event.99001.tooltip
+		name = aranya_bombardment_event.99002.c1
+		custom_tooltip = aranya_bombardment_event.99002.tooltip
 		trigger  = {
 			has_civic = civic_fanatic_purifiers
 		}
 	}
+	option = {
+		name = aranya_bombardment_event.99002.c2
+		custom_tooltip = aranya_bombardment_event.99002.tooltip
+		trigger  = {
+			has_authority = auth_machine_intelligence
+		}
+	}
+	option = {
+		name = aranya_bombardment_event.99002.c3
+		custom_tooltip = aranya_bombardment_event.99002.tooltip
+	}
 }
 
-# 99003 Inform the pray that thir planet is hellraised.
+# 99003 Inform the prey that thir planet is hellraised.
+country_event = {
+	id = aranya_bombardment_event.99003
+	title = "aranya_bombardment_event.99003.title"
+	desc = "aranya_bombardment_event.99003.desc"
+	picture = GFX_aranya_event_burning_city
+	show_sound = aranya_event_planet_hellraised
+	is_triggered_only = yes
+	location = from
+
+	option = {
+		name = aranya_bombardment_event.99003.c1
+		custom_tooltip = aranya_bombardment_event.99003.tooltip
+		trigger  = {
+			has_civic = civic_fanatic_purifiers
+		}
+	}
+	option = {
+		name = aranya_bombardment_event.99003.c2
+		custom_tooltip = aranya_bombardment_event.99003.tooltip
+		trigger  = {
+			has_authority = auth_machine_intelligence
+		}
+	}
+	option = {
+		name = aranya_bombardment_event.99003.c3
+		custom_tooltip = aranya_bombardment_event.99003.tooltip
+	}
+}

@@ -34,16 +34,47 @@
  ####################################
  # Planetary Bombardment Event
  ####################################
+
+ # Inform all empires
  aranya_bombardment_event.99001.title: "Hellraised"
  aranya_bombardment_event.99001.desc: "We have received a transmission from the planet §R[From.GetName]§!, which has been §Rhellraised§! by §Y[Root.GetName]§!. 99% of the population didn't make escape in time. They are trapped in an eternal pain and misery with no way out. Everybody on the planet seems to still be alive, but we can only hear them scream in howls forever."
- aranya_bombardment_event.99001.1: "Another weak nuked."
- aranya_bombardment_event.99001.2: "Raise an alarm!"
  aranya_bombardment_event.99001.tooltip: "§Y[From.GetName] has been §Rhellraised§!."
+ aranya_bombardment_event.99001.c1: "Another weak junk purged."
+ aranya_bombardment_event.99001.c2: "Raise an alarm!"
 
+ # Inform attacker
  aranya_bombardment_event.99002.title: "Hellraised"
- aranya_bombardment_event.99002.desc: "We have shown no mercy to all the prey on the planet §R[From.GetName]§!, and turned it into the §MHellish world§!. All souls are trapped with eternal misery with the only one way out, crack the planet."
+ aranya_bombardment_event.99002.desc: "We have shown no mercy to all the prey on the planet §R[From.GetName]§!, and turned it into the §MHellish world§!. All souls are trapped with eternal misery with the only one way out, crack the planet. Our prey is suffering from such a catastrophe, and is less likely or impossible to recover soon. We shall see our fleet and army get a huge advantage in eradicating such a weakness of the galaxy."
  aranya_bombardment_event.99002.tooltip: "Our target, §Y[From.GetName] has been §Rhellraised§!."
+ aranya_bombardment_event.99002.c1: "Another weak junk purged."
+ aranya_bombardment_event.99002.c2: "Looking for more possible targets."
+ aranya_bombardment_event.99002.c3: "Excellent."
 
- aranya_bombardment_event.99003.title: "Our plabet has been Hellraised!"
- aranya_bombardment_event.99003.desc: ""
- aranya_bombardment_event.99003.tooltip: "Our colony, §Y[From.GetName] turned into the §Mhellish world§!."
+ # Inform prey
+ aranya_bombardment_event.99003.title: "Our planet has been Hellraised!"
+ aranya_bombardment_event.99003.desc: "Our colony  §R[From.GetName]§! has been destroyed and turned into the §MHellish world§!. It has been confirmed that 99% of our population on the planet didn't make an escape in time, and are trapped in the planet filled with pain and misery that are amplified every year. Our citizens are having severe trauma from this catastrophe, and many began to flee from our country. We may not be able to recover our country soon enough to cope with this war."
+ aranya_bombardment_event.99003.tooltip: "Our planet, §Y[From.GetName] turned into the §Mhellish world§!."
+ aranya_bombardment_event.99003.c1: "No, you dare? YOU DARE?????"
+ aranya_bombardment_event.99003.c2: "Evacuate all citizens, if there are any left."
+ aranya_bombardment_event.99003.c3: "Someone please save us..."
+
+ # Inform prey
+ aranya_bombardment_event.99004.title: "Our planet has been Hellraised!"
+ aranya_bombardment_event.99004.desc: "Another planet we care of,  §R[From.GetName]§! was there another target and has been turned into the §MHellish world§!. It has been confirmed that 95% of our population on the planet didn't make an escape in time, and are trapped in the planet filled with pain and misery that are amplified every year. Our citizens, who were having enough fear from the recent attack, are panicking and finding their ways out to free themselves from an incoming unstoppable nightmare, after realizing that we might not be able to save them all. This causes a huge impact to our economy and strength. "
+ aranya_bombardment_event.99004.tooltip: "Our planet, §Y[From.GetName] turned into the §Mhellish world§!."
+ aranya_bombardment_event.99004.c1: "Will this be our end?"
+ aranya_bombardment_event.99004.c2: "Evacuate all citizens from all nearby planet soon!"
+ aranya_bombardment_event.99004.c3: "Another planet? Again!?"
+
+
+ ####################################
+ # Projects and special projects
+ ####################################
+ GALACTIC_DREPRESSION_STEP_1: "Depressing Even More"
+ GALACTIC_DREPRESSION_STEP_1_DESC: "Arrr!!!"
+
+ GALACTIC_DREPRESSION_STEP_NORMAL_2: "Traumalization Amplifier"
+ GALACTIC_DREPRESSION_STEP_NORMAL_2_DESC: "DELETE IT"
+
+ GALACTIC_DREPRESSION_STEP_MACHINE_2: "A Process to Delete All Trace of Life"
+ GALACTIC_DREPRESSION_STEP_MACHINE_2_DESC: "Arrr!!!"

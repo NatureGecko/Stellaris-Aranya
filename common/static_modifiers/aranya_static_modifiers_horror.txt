@@ -1,9 +1,27 @@
 # Is a victim of hellraising
-aranya_hellraising_victim = {
+aranya_hellraising_victim_1 = {
 	pop_happiness = -0.6
 	pop_growth_speed = -0.75
 	pop_amenities_usage_mult = 0.35
 	pop_government_ethic_attraction = -0.7
+	planet_immigration_pull_mult = -0.8
+	trade_value_mult = -0.2
+}
+aranya_hellraising_victim_2 = {
+	pop_happiness = -0.75
+	pop_growth_speed = -1.2
+	pop_amenities_usage_mult = 0.6
+	pop_government_ethic_attraction = -1.5
+	planet_immigration_pull_mult = -1.5
+	trade_value_mult = -0.4
+}
+aranya_hellraising_victim_3 = {
+	pop_happiness = -0.98
+	pop_growth_speed = -1.5
+	pop_amenities_usage_mult = 0.9
+	pop_government_ethic_attraction = -2.25
+	planet_immigration_pull_mult = -3.0
+	trade_value_mult = -0.8
 }
 
 # Was a victim of hellraising

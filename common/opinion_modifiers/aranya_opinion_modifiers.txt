@@ -1,11 +1,27 @@
-opinion_aranya_hellraising_planet = {
+opinion_aranya_hellraised_planet = {
 	opinion = {
 		base = -700
 	}
 }
 
-opinion_aranya_hellraising_our_planet = {
+opinion_aranya_hellraised_our_planet = {
 	opinion = {
 		base = -1250
+	}
+}
+
+opinion_aranya_galactic_depression = {
+	opinion = {
+		base = -100
+		modifier = {
+			has_civic = civic_fanatic_purifiers
+			add = 125
+		}
+	}
+}
+
+opinion_aranya_galactic_depression_warefare = {
+	opinion = {
+		base = -100
 	}
 }
