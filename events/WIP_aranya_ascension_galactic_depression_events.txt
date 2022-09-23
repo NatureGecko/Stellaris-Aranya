@@ -1,12 +1,15 @@
-namespace = AranyaAscensionGalacticDepressionEvents
+namespace = AranyaSpecialProjectEvents
 ######################################
 #									 #
-########### Space Engineers ###########
+# Special Project Events
 #									 #
 ######################################
 
+# 1100X Adopting galactic depression perk
+
+# Afer choosing the galactic depression ascension perk, will start the mission to understand how to make a disaster to the galaxy. 
 country_event = {
-	id = AranyaAscensionGalacticDepressionEvents.1
+	id = AranyaSpecialProjectEvents.11001
 	title = "aranya_ascension_perk_galactic_depression_event_title"
 	desc = "aranya_ascension_perk_galactic_depression_event_desc"
 	show_sound = event_aranya_sfx_hive_mind
@@ -39,14 +42,30 @@ country_event = {
 	}
 }
 
+# After finishing the first step,the player will be asked to get a sample from the hellish world. 
 country_event = {
-	id = AranyaAscensionGalacticDepressionEvents.2
+	id = AranyaSpecialProjectEvents.11002
 	title = "aranya_ascension_perk_galactic_depression_event_2_title"
 	desc = "aranya_ascension_perk_galactic_depression_event_2_desc"
 	show_sound = event_aranya_sfx_hive_mind
 	picture = GFX_aranya_galactic_depression
 	location = capital_scope
 	is_triggered_only = yes
+
+	immediate = {
+		every_playable_country = {
+			limit = {
+				NOT = {
+					is_same_value = root
+				}
+			}
+			add_opinion_modifier = {
+				who = THIS
+				modifier = opinion_aranya_galactic_depression
+			}
+		}
+	}
+
 	option = { 
 		name = Aranya_e2_choice_finally_non_fanatic 
 		trigger  = {
@@ -69,3 +88,7 @@ country_event = {
 		}
 	}
 }
+
+# 1200x Adopting thumeran ascendancy perk
+
+# 1300x 

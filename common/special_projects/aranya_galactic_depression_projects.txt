@@ -1,3 +1,69 @@
+#------------------------------
+#
+# Special Projects List
+#
+#------------------------------
+# Galactic Depression project : The FIrst Step to Understand More
+
+
+# Galactic Depression project : Nightmare warefare for planetary defense 
+
+
+# Galactic Depression project : Nightmare weapons for ship
+
+
+# Galactic Depression project : Hellish World sample
+
+
+# Galactic Depression project : World hellraiser bombardment
+
+
+# Galactic Depression project : 
+
+
+# Galactic Depression project : Galactic Horror
+
+
+# Thumeran ascendancy : Understand Our Life
+
+
+# Thumeran ascendancy : Steping 
+
+
+# Thumeran ascendancy : 
+
+
+# Thumeran ascendancy : 
+
+
+# Thumeran ascendancy : 
+
+
+# Thumeran ascendancy : 
+
+
+# Thumeran ascendancy : Thumeran Ascendancy
+
+
+# Hell lowering : Hellish World
+
+
+# Hell lowering : Hellish World
+
+
+# Hell lowering Choice 1.1 : Terraform the Hellish World
+
+# Hell lowering Choise 1.2 : Hellish Settlement
+
+# Hellish World Settlement : The First Step
+
+# Hellish World Settlement : Infrastructure Investment
+
+# Hellish World Settlement : Blocker clearance
+
+# Hellish World Settlement : Hellish World Colonization
+
+
 special_project = {
 	key = "GALACTIC_DREPRESSION_STEP_1"
 	cost = 140000
@@ -5,7 +71,7 @@ special_project = {
 	picture = GFX_aranya_galactic_depression
 	event_scope = country_event
 	icon = "gfx/interface/icons/situation_log/aranya_galactic_depression.dds"
-	on_success = { country_event = { id = AranyaAscensionGalacticDepressionEvents.2 } }
+	on_success = { country_event = { id = AranyaSpecialProjectEvents.11002 } }
 	on_fail = {}
 }
 
@@ -16,7 +82,7 @@ special_project = {
 	picture = GFX_aranya_galactic_depression
 	event_scope = country_event
 	icon = "gfx/interface/icons/situation_log/aranya_galactic_depression.dds"
-	on_success = { country_event = { id = AranyaAscensionGalacticDepressionEvents.2 } }
+	on_success = { country_event = { id = AranyaSpecialProjectEvents.11002 } }
 	on_fail = {}
 }
 
@@ -27,6 +93,6 @@ special_project = {
 	picture = GFX_aranya_galactic_depression
 	event_scope = country_event
 	icon = "gfx/interface/icons/situation_log/aranya_galactic_depression.dds"
-	on_success = { country_event = { id = AranyaAscensionGalacticDepressionEvents.2 } }
+	on_success = { country_event = { id = AranyaSpecialProjectEvents.11002 } }
 	on_fail = {}
 }

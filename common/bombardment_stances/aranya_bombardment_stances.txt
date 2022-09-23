@@ -49,13 +49,40 @@ hellraising = {
 	min_pops_to_kill_pop = 0
 
 	ai_weight = {
-		weight = 1
+		weight = 0
+
 		modifier = {
-			factor = 20
+			factor = 10
 			OR = {
 				owner = { has_civic = civic_fanatic_purifiers }
-				owner = { has_authority = auth_machine_intelligence }
+				owner = { has_civic = civic_machine_terminator }
 			}
+		}
+		# The devouring swarm will prefer eating population over hellraise their home.
+		modifier = {
+			factor = 2
+			owner = { has_civic = civic_hive_devouring_swarm }
+		}
+		# xenophobe or spiritualist will most likly hellraise planet. 
+		modifier = {
+			factor = 10
+			OR = {
+				owner = { has_ethic = ethic_xenophobe }
+				owner = { has_ethic = ethic_spiritualist }
+			}
+		}	
+		# Fanatic xenophobe or spiritualist will often hellraise planet. 
+		modifier = {
+			factor = 30
+			OR = {
+				owner = { has_ethic = ethic_fanatic_xenophobe }
+				owner = { has_ethic = ethic_fanatic_spiritualist }
+			}
+		}
+		# If the fallen empire is xenophobe, will nuke the planet into the hellish world.
+		modifier = {
+			factor = 100
+			owner = { has_ai_personality = awakened_fallen_empire_xenophobe }
 		}
 	}
 
