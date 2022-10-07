@@ -13,55 +13,179 @@
 
 # The Eternal misery origin starting system
 aranya_eternal_misery_starting = {
-	name = "Eternal Depression"
-	class = "sc_m"
+	name = "NAME_aranya_system_depression"
+	class = "sc_t"
 	usage = misc_system_init
 	
 	flags = { aranya_eternal_misery_system }
 
+    # Guarantee Spawn
 	max_instances = 1
 	spawn_chance = 100
-
     usage_odds = {
 		base = 100
 	}
 
+    # Astroid belts
 	asteroid_belt = {
 		type = rocky_asteroid_belt
-		radius = 60
+		radius = 145
+	}
+    asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 90
 	}
 
+    ## Star
     planet = {
-		class = pc_m_giant_star
+        name = "NAME_aranya_system_depression_star"
+		class = pc_t_star
 		orbit_distance = 0
 	}
 
-	change_orbit = 30
+    ## Planets in this system
+    planet = {
+		count = { min = 3 max = 5 }
+		class = pc_asteroid
+		orbit_distance = 70
+		orbit_angle = { min = 0 max = 180 }
+        init_effect = {
+            prevent_anomaly = yes
+        }
+	}
 
+    planet = {
+		count = { min = 3 max = 5 }
+		class = pc_asteroid
+		orbit_distance = 320
+		orbit_angle = { min = 0 max = 180 }
+        init_effect = {
+            prevent_anomaly = yes
+        }
+	}
+    change_orbit = 0
+    #
+    ## Planets in this system
+    #
+
+    # 30
+    planet = {
+        name = "NAME_aranya_system_depression_1"
+        class = pc_shattered
+        orbit_distance = 30
+        orbit_angle = { min = 90 max = 180 }
+        size = 12
+        init_effect = {
+            prevent_anomaly = yes
+        }
+    }
+    change_orbit = 30
+
+    # 50
+    planet = {
+        name = "NAME_aranya_system_depression_2"
+        class = pc_shattered
+        orbit_distance = 50
+        orbit_angle = { min = 0 max = 90 }
+        init_effect = {
+            prevent_anomaly = yes
+        }
+        size = 32
+    }
+
+    change_orbit = 75
+    # 100
+    planet = {
+        name = "NAME_aranya_system_depression_3"
+        class = pc_shattered
+        orbit_distance = 100
+        orbit_angle = { min = 0 max = 360 }
+        size = 20
+        init_effect = {
+            prevent_anomaly = yes
+        }
+    }
+    change_orbit = 100
+    # 130 The Empire of Houzalu
 	planet = {
+        name = "NAME_aranya_system_depression_empire_1"
 		class = pc_aranya_hellish_world
-		orbit_distance = 30
+		orbit_distance = 130
 		orbit_angle = { min = 90 max = 270 }
 		init_effect = {
 			prevent_anomaly = yes
 		}
+        size = 24
+
+        change_orbit = 12
+
+        moon = {
+			name = "NAME_aranya_system_depression_empire_1_moon_1"
+			class = "pc_broken"
+			size = 6
+			orbit_distance = 12
+			orbit_angle = { min = 0 max = 90 }
+			has_ring = no
+            init_effect = {
+                prevent_anomaly = yes
+            }
+		}
+        change_orbit = 5
+        moon = {
+			name = "NAME_aranya_system_depression_empire_1_moon_2"
+			class = "pc_broken"
+			size = 5
+			orbit_distance = 15
+			orbit_angle = { min = 180 max = 360 }
+			has_ring = no
+            init_effect = {
+                prevent_anomaly = yes
+            }
+		}
+	}
+    change_orbit = 130
+    # The Natimadongja Council
+    planet = {
+        name = "NAME_aranya_system_depression_empire_2"
+		class = pc_aranya_hellish_world
+		orbit_distance = 72
+		orbit_angle = { min = 90 max = 270 }
+		init_effect = {
+			prevent_anomaly = yes
+		}
+        size = 24
+	}
+    change_orbit = 130
+    # The Horror
+    planet = {
+        name = "NAME_aranya_system_depression_empire_3"
+		class = pc_aranya_hellish_world
+		orbit_distance = 80
+		orbit_angle = { min = 90 max = 270 }
+		init_effect = {
+			prevent_anomaly = yes
+		}
+        size = 25
 	}
 
 }
 
-my_system_initializer = {
+aranya_my_system_initializer = {
     name = "My System"
     class = "rl_standard_stars"
-	spawn_chance = 100
-
-    usage_odds = {
-		base = 100
-	}
+    usage = misc_system_init
 
     asteroid_belt = {
         type = rocky_asteroid_belt
         radius = 70
     }
+
+    max_instances = 1
+	spawn_chance = 100
+
+    usage_odds = {
+		base = 100
+	}
 
     planet = {
         class = star
@@ -113,5 +237,11 @@ my_system_initializer = {
             orbit_distance = 5
             orbit_angle = { min = 90 max = 270 }
         }
+    }
+
+    neighbor_system = {
+        trigger = { num_guaranteed_colonies >= 1 }
+        distance = { min = 10 max = @distance }	
+        initializer = "sol_neighbor_t1_first_colony"
     }
 }

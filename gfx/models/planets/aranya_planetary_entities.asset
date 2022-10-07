@@ -35,7 +35,7 @@ entity = {
 #####    Planets    ######
 entity = {
 	name = "pc_aranya_hellish_world_01_entity"
-	pdxmesh = "planet_non_clouded_mesh"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	default_state = "idle"
 	
 	#planet surface texture override

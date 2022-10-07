@@ -8,7 +8,7 @@ pc_aranya_hellish_world = {
 
     atmosphere_color 		= hsv { 0.79 0.9 0.27 }
     atmosphere_intensity 	= 0.085
-    atmosphere_width 		= 2
+    atmosphere_width 		= 5
 
     min_distance_from_sun = 60
     max_distance_from_sun = 110
@@ -58,6 +58,7 @@ pc_aranya_the_grand_gaia_world = {
 
     colonizable = yes
 	ideal = yes
+    starting_planet = no
 
 	modifier = {
 		pop_happiness = 0.25
