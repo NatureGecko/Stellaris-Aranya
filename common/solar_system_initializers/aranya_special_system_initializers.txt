@@ -29,113 +29,120 @@ aranya_eternal_misery_starting = {
     # Astroid belts
 	asteroid_belt = {
 		type = rocky_asteroid_belt
-		radius = 145
+		radius = 150
 	}
     asteroid_belt = {
-		type = rocky_asteroid_belt
-		radius = 90
+		type = icy_asteroid_belt
+		radius = 245
 	}
 
-    ## Star
+    # +0   = 0
     planet = {
-        name = "NAME_aranya_system_depression_star"
-		class = pc_t_star
+		name = "NAME_aranya_system_depression_star"
+		class = "pc_m_star"
 		orbit_distance = 0
-	}
+        size = 40
+		orbit_angle = 1
+		has_ring = no
 
-    ## Planets in this system
-    planet = {
-		count = { min = 3 max = 5 }
-		class = pc_asteroid
-		orbit_distance = 70
-		orbit_angle = { min = 0 max = 180 }
         init_effect = {
             prevent_anomaly = yes
         }
 	}
 
+    # +50  = 50
     planet = {
-		count = { min = 3 max = 5 }
-		class = pc_asteroid
-		orbit_distance = 320
-		orbit_angle = { min = 0 max = 180 }
+		name = "NAME_aranya_system_depression_1"
+		class = "pc_shattered"
+		orbit_distance = 50
+		orbit_angle = { min = 10 max = 20 }
+		size = 12
+		has_ring = no
         init_effect = {
             prevent_anomaly = yes
         }
 	}
-    change_orbit = 0
-    #
-    ## Planets in this system
-    #
 
-    # 30
+    # +25  = 75
     planet = {
-        name = "NAME_aranya_system_depression_1"
-        class = pc_shattered
-        orbit_distance = 30
-        orbit_angle = { min = 90 max = 180 }
-        size = 12
-        init_effect = {
+		name = "NAME_aranya_system_depression_2"
+		class = "pc_shattered"
+		orbit_distance = 25
+		orbit_angle = { min = 70 max = 90 }
+		size = 20
+		init_effect = {
             prevent_anomaly = yes
         }
-    }
-    change_orbit = 30
 
-    # 50
-    planet = {
-        name = "NAME_aranya_system_depression_2"
-        class = pc_shattered
-        orbit_distance = 50
-        orbit_angle = { min = 0 max = 90 }
-        init_effect = {
-            prevent_anomaly = yes
-        }
-        size = 32
-    }
+        moon = {
+            orbit_distance = 9
+			name = "NAME_aranya_system_depression_2_moon_1"
+			class = "pc_shattered"
+			size = 6
+			orbit_angle = { min = 50 max = 100 }
+			has_ring = no
+            init_effect = {
+                prevent_anomaly = yes
+            }
+		}
 
-    change_orbit = 75
-    # 100
+        moon = {
+            orbit_distance = 5
+			name = "NAME_aranya_system_depression_2_moon_2"
+			class = "pc_shattered"
+			size = 5
+			orbit_angle = { min = 200 max = 300 }
+			has_ring = no
+            init_effect = {
+                prevent_anomaly = yes
+            }
+		}
+	}
+
+    # +20  = 95
     planet = {
         name = "NAME_aranya_system_depression_3"
-        class = pc_shattered
-        orbit_distance = 100
-        orbit_angle = { min = 0 max = 360 }
-        size = 20
+        class = "pc_shattered"
+        orbit_distance = 20
+        orbit_angle = { min = 270 max = 280 }
+        size = 17
         init_effect = {
             prevent_anomaly = yes
         }
     }
-    change_orbit = 100
-    # 130 The Empire of Houzalu
+
+    # +15  = 110
 	planet = {
+        orbit_distance = 15
+
         name = "NAME_aranya_system_depression_empire_1"
 		class = pc_aranya_hellish_world
-		orbit_distance = 130
 		orbit_angle = { min = 90 max = 270 }
+        deposit_blockers = none
+		modifiers = none
+        size = 18
+
 		init_effect = {
 			prevent_anomaly = yes
 		}
-        size = 24
-
-        change_orbit = 12
-
+        
         moon = {
+            orbit_distance = 10
 			name = "NAME_aranya_system_depression_empire_1_moon_1"
-			class = "pc_broken"
+			class = "pc_shattered"
 			size = 6
-			orbit_distance = 12
 			orbit_angle = { min = 0 max = 90 }
 			has_ring = no
             init_effect = {
                 prevent_anomaly = yes
             }
 		}
-        change_orbit = 5
+
         moon = {
+            orbit_distance = 3
 			name = "NAME_aranya_system_depression_empire_1_moon_2"
-			class = "pc_broken"
+			class = "pc_shattered"
 			size = 5
-			orbit_distance = 15
 			orbit_angle = { min = 180 max = 360 }
 			has_ring = no
             init_effect = {
@@ -143,105 +150,200 @@ aranya_eternal_misery_starting = {
             }
 		}
 	}
-    change_orbit = 130
+
+    # +25  = 135
     # The Natimadongja Council
     planet = {
         name = "NAME_aranya_system_depression_empire_2"
-		class = pc_aranya_hellish_world
-		orbit_distance = 72
-		orbit_angle = { min = 90 max = 270 }
-		init_effect = {
-			prevent_anomaly = yes
-		}
-        size = 24
+        class = pc_aranya_hellish_world
+        orbit_distance = 25
+        orbit_angle = { min = 90 max = 180 }
+        init_effect = {
+            prevent_anomaly = yes
+        }
+        size = 20
+    }
+
+    # +15  = 150
+    planet = {
+		name = "NAME_aranya_system_depression_asteroid_1"
+		class = "pc_asteroid"
+		orbit_distance = 15
+		orbit_angle = { min = 15 max = 75 }
+		size = 5
+		has_ring = no
+        init_effect = {
+            prevent_anomaly = yes
+        }
 	}
-    change_orbit = 130
+
+	planet = {
+		name = "NAME_aranya_system_depression_asteroid_2"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = { min = 105 max = 165 }
+		size = 5
+		has_ring = no
+        init_effect = {
+            prevent_anomaly = yes
+        }
+	}
+
+	planet = {
+		name = "NAME_aranya_system_depression_asteroid_3"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = { min = 195 max = 265 }
+		size = 5
+		has_ring = no
+        init_effect = {
+            prevent_anomaly = yes
+        }
+	}
+
+	planet = {
+		name = "NAME_aranya_system_depression_asteroid_4"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = { min = 285 max = 345 }
+		size = 5
+		has_ring = no
+        init_effect = {
+            prevent_anomaly = yes
+        }
+	}
+
+    # +15  = 165
     # The Horror
     planet = {
         name = "NAME_aranya_system_depression_empire_3"
 		class = pc_aranya_hellish_world
-		orbit_distance = 80
-		orbit_angle = { min = 90 max = 270 }
+		orbit_distance = 15
+		orbit_angle = { min = 180 max = 270 }
 		init_effect = {
 			prevent_anomaly = yes
 		}
-        size = 25
+        size = 17
+
+        moon = {
+            orbit_distance = 10
+			name = "NAME_aranya_system_depression_empire_3_moon_1"
+			class = "pc_shattered"
+			size = 6
+			orbit_angle = { min = 0 max = 90 }
+			has_ring = no
+            init_effect = {
+                prevent_anomaly = yes
+            }
+		}
+        moon = {
+            orbit_distance = 5
+			name = "NAME_aranya_system_depression_empire_3_moon_2"
+			class = "pc_shattered"
+			size = 5
+			orbit_angle = { min = 180 max = 360 }
+			has_ring = no
+            init_effect = {
+                prevent_anomaly = yes
+            }
+		}
+
 	}
 
-}
-
-aranya_my_system_initializer = {
-    name = "My System"
-    class = "rl_standard_stars"
-    usage = misc_system_init
-
-    asteroid_belt = {
-        type = rocky_asteroid_belt
-        radius = 70
-    }
-
-    max_instances = 1
-	spawn_chance = 100
-
-    usage_odds = {
-		base = 100
+    # +15  = 180
+    planet = {
+		name = "NAME_aranya_system_depression_4"
+		class = "pc_shattered"
+		orbit_distance = 15
+		orbit_angle = { min = 90 max = 180 }
+		size = 12
+		has_ring = no
+        init_effect = {
+            prevent_anomaly = yes
+        }
 	}
 
+    # +30  = 210
     planet = {
-        class = star
-        size = { min = 25 max = 30 }
-        orbit_distance = 0
-        orbit_angle = 1
-    }
-
-    change_orbit = 10
-
-    planet = {
-        class = pc_arid
-        orbit_distance = 30
-        orbit_angle = { min = 90 max = 270 }
+		name = "NAME_aranya_system_depression_giant_1"
+		class = "pc_gas_giant"
+		orbit_distance = 30
+		orbit_angle = { min = 100 max = 250 }
+		size = 30
+		has_ring = yes
+		entity = "gas_giant_05_entity"
 
         init_effect = {
             prevent_anomaly = yes
-            generate_primitives_on_planet = yes
-        }
-
-        change_orbit = @base_moon_distance
-
-        moon = {
-            count = { min = 0 max = 1 }
-            class = pc_molten
-            orbit_distance = 5
-            orbit_angle = { min = 90 max = 270 }
         }
     }
 
-    change_orbit = 30
+    # +15  = 235
+    planet = {
+		name = "NAME_aranya_system_depression_5"
+		class = "pc_shattered"
+		orbit_distance = 15
+		orbit_angle = { min = 0 max = 150 }
+		size = 29
+		has_ring = yes
+
+        init_effect = {
+            prevent_anomaly = yes
+        }
+    }
+
+
+    # +10  = 245
+    planet = {
+		name = "NAME_aranya_system_depression_asteroid_5"
+		class = "pc_ice_asteroid"
+		orbit_distance = 10
+		orbit_angle =  { min = 15 max = 75 }
+		size = 5
+		has_ring = no
+
+        init_effect = {
+            prevent_anomaly = yes
+        }
+	}
+
+	planet = {
+		name = "NAME_aranya_system_depression_asteroid_6"
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle =  { min = 80 max = 125 }
+		size = 5
+		has_ring = no
+
+        init_effect = {
+            prevent_anomaly = yes
+        }
+	}
+
+	planet = {
+		name = "NAME_aranya_system_depression_asteroid_7"
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle =  { min = 130 max = 150 }
+		size = 5
+		has_ring = no
+
+        init_effect = {
+            prevent_anomaly = yes
+        }
+	}
 
     planet = {
-        count = { min = 1 max = 4 }
-        class = pc_asteroid
-        orbit_distance = 0
-        orbit_angle = { min = 90 max = 270 }
-    }
+		name = "NAME_aranya_system_depression_asteroid_8"
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = { min = 160 max = 300 }
+		size = 5
+		has_ring = no
 
-    planet = {
-        count = { min = 3 max = 6 }
-        orbit_distance = 20
-        orbit_angle = { min = 90 max = 270 }
-
-        change_orbit = @base_moon_distance
-
-        moon = {
-            count = { min = 0 max = 1 }
-            orbit_distance = 5
-            orbit_angle = { min = 90 max = 270 }
+        init_effect = {
+            prevent_anomaly = yes
         }
-    }
+	}
 
-    neighbor_system = {
-        trigger = { num_guaranteed_colonies >= 1 }
-        distance = { min = 10 max = @distance }	
-        initializer = "sol_neighbor_t1_first_colony"
-    }
 }
